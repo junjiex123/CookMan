@@ -5,7 +5,6 @@ import android.content.Context;
 import com.example.administrator.cookman.constants.Constants;
 import com.example.administrator.cookman.utils.Logger.LogLevel;
 import com.example.administrator.cookman.utils.Logger.Logger;
-import com.tencent.bugly.crashreport.CrashReport;
 
 import org.litepal.LitePalApplication;
 
@@ -31,8 +30,6 @@ public class CookManApplication extends LitePalApplication {
             Logger.init(Constants.Common_Tag).logLevel(LogLevel.NONE);
         }
 
-        //腾讯Bugly
-        CrashReport.initCrashReport(getApplicationContext());
 
     }
 

@@ -29,8 +29,6 @@ import com.example.administrator.cookman.ui.component.twinklingrefreshlayout.Twi
 import com.example.administrator.cookman.ui.component.twinklingrefreshlayout.header.bezierlayout.BezierLayout;
 import com.example.administrator.cookman.utils.Logger.Logger;
 import com.example.administrator.cookman.utils.ToastUtil;
-import com.umeng.analytics.MobclickAgent;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -128,7 +126,6 @@ public class CookListFragment extends BaseFragment implements
 
     @OnClick(R.id.relative_category)
     public void onClickCategory(){
-        MobclickAgent.onEvent(getActivity(), Constants.Umeng_Event_Id_Category);
 
         CookCategoryActivity.startActivity(getActivity());
         onClickOverlay();
@@ -136,7 +133,6 @@ public class CookListFragment extends BaseFragment implements
 
     @OnClick(R.id.relative_collection)
     public void onClickCollection(){
-        MobclickAgent.onEvent(getActivity(), Constants.Umeng_Event_Id_Collection_See);
 
         CookCollectionListActivity.startActivity(getActivity());
         onClickOverlay();
@@ -144,7 +140,6 @@ public class CookListFragment extends BaseFragment implements
 
     @OnClick(R.id.relative_about)
     public void onClickAbout(){
-        MobclickAgent.onEvent(getActivity(), Constants.Umeng_Event_Id_About);
 
         AboutActivity.startActivity(getActivity());
         onClickOverlay();

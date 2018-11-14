@@ -27,7 +27,6 @@ import com.example.administrator.cookman.ui.component.magicindicator.buildins.co
 import com.example.administrator.cookman.ui.component.magicindicator.buildins.commonnavigator.indicators.WrapPagerIndicator;
 import com.example.administrator.cookman.ui.component.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
 import com.example.administrator.cookman.utils.Logger.Logger;
-import com.umeng.analytics.MobclickAgent;
 
 import java.util.List;
 
@@ -90,7 +89,6 @@ public class MainPageFragment extends BaseFragment implements
     /********************************************************************************************/
     @OnClick(R.id.imgv_search)
     public void onClickImgvSearch(){
-        MobclickAgent.onEvent(getActivity(), Constants.Umeng_Event_Id_Search);
 
         getFragmentManager()
                 .beginTransaction()
@@ -101,7 +99,6 @@ public class MainPageFragment extends BaseFragment implements
 
     @OnClick(R.id.imgv_add)
     public void onClickChannelAManager(){
-        MobclickAgent.onEvent(getActivity(), Constants.Umeng_Event_Id_Channel);
 
         CookChannelActivity.startActivity(getActivity());
     }

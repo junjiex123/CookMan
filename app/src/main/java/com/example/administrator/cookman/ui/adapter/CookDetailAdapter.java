@@ -19,7 +19,6 @@ import com.example.administrator.cookman.ui.component.SwitchIconView;
 import com.example.administrator.cookman.utils.GlideUtil;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -123,7 +122,6 @@ public class CookDetailAdapter extends RecyclerView.Adapter<CookDetailAdapter.It
                             CookCollectionManager.getInstance().delete(srcData);
                         }
                         else{
-                            MobclickAgent.onEvent(context, Constants.Umeng_Event_Id_Collection_Add);
 
                             CookCollectionManager.getInstance().add(srcData);
                         }

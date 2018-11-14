@@ -26,7 +26,6 @@ import com.example.administrator.cookman.ui.component.SwitchIconView;
 import com.example.administrator.cookman.utils.GlideUtil;
 import com.example.administrator.cookman.utils.Logger.Logger;
 import com.example.administrator.cookman.utils.StatusBarUtil;
-import com.umeng.analytics.MobclickAgent;
 
 import butterknife.Bind;
 import butterknife.OnClick;

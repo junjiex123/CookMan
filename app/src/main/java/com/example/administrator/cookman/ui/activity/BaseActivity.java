@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.administrator.cookman.presenter.Presenter;
-import com.umeng.analytics.MobclickAgent;
 
 import butterknife.ButterKnife;
 
@@ -38,9 +37,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        //友盟统计
-        MobclickAgent.onResume(this);
-
         if(presenter == null && getPresenter() != null){
             presenter = getPresenter();
         }
@@ -50,9 +46,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-
-        //友盟统计
-        MobclickAgent.onPause(this);
     }
 
     @Override

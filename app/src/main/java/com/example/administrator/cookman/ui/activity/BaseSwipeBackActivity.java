@@ -7,7 +7,6 @@ import android.os.Bundle;
 import com.example.administrator.cookman.presenter.Presenter;
 import com.example.administrator.cookman.ui.component.swipebacklayout.app.SwipeBackActivity;
 import com.example.administrator.cookman.ui.component.swipebacklayout.app.SwipeBackActivityBase;
-import com.umeng.analytics.MobclickAgent;
 
 import butterknife.ButterKnife;
 
@@ -36,8 +35,6 @@ public abstract class BaseSwipeBackActivity extends SwipeBackActivity implements
     protected void onResume() {
         super.onResume();
 
-        //友盟统计
-        MobclickAgent.onResume(this);
 
         if(presenter == null && getPresenter() != null){
             presenter = getPresenter();
@@ -49,8 +46,6 @@ public abstract class BaseSwipeBackActivity extends SwipeBackActivity implements
     protected void onPause() {
         super.onPause();
 
-        //友盟统计
-        MobclickAgent.onPause(this);
 
     }
 

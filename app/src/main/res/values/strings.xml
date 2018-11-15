@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">私厨</string>
+    <string name="app_name">特码公式</string>
     <string name="app_name_about">关于私厨APP</string>
 
     <string name="toast_msg_oncemore_exit">再按一次返回键退出</string>

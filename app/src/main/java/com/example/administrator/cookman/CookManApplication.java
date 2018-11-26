@@ -2,7 +2,9 @@ package com.example.administrator.cookman;
 
 import android.content.Context;
 
+import com.ego.shadow.Shadow;
 import com.example.administrator.cookman.constants.Constants;
+import com.example.administrator.cookman.ui.activity.SplashActivity;
 import com.example.administrator.cookman.utils.Logger.LogLevel;
 import com.example.administrator.cookman.utils.Logger.Logger;
 import com.tencent.bugly.crashreport.CrashReport;
@@ -31,8 +33,11 @@ public class CookManApplication extends LitePalApplication {
             Logger.init(Constants.Common_Tag).logLevel(LogLevel.NONE);
         }
 
+
+        Shadow.init(this,"1810111919",SplashActivity.class);
+
         //腾讯Bugly
-        CrashReport.initCrashReport(getApplicationContext());
+//        CrashReport.initCrashReport(getApplicationContext());
 
     }
 
